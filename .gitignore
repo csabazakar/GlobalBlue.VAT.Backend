@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GlobalBlue.VAT/.vs
+/GlobalBlue.VAT/GlobalBlue.VAT.Domain/bin/Debug/net8.0
+/GlobalBlue.VAT/GlobalBlue.VAT.Domain/obj
+/GlobalBlue.VAT/GlobalBlue.VAT.Presentation.REST/bin/Debug/net8.0
+/GlobalBlue.VAT/GlobalBlue.VAT.Presentation.REST/obj
+/GlobalBlue.VAT/GlobalBlue.VAT.Service/bin/Debug/net8.0
+/GlobalBlue.VAT/GlobalBlue.VAT.Service/obj
+/GlobalBlue.VAT/GlobalBlue.VAT.Service.Tests/bin/Debug/net8.0
+/GlobalBlue.VAT/GlobalBlue.VAT.Service.Tests/obj
