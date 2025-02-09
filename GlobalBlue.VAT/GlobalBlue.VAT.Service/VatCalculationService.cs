@@ -60,7 +60,7 @@ public class VatCalculationService : IVatCalculationService
             throw new ArgumentException("VAT rata must be greater than 0", nameof(vatRate));
         }
 
-        var netAmount = vatAmount * vatRate / 100;
+        var netAmount = vatAmount / (vatRate / 100);
 
         return new VatCalculationAmounts
         {
