@@ -11,7 +11,8 @@ namespace GlobalBlue.VAT.Presentation.REST.Controllers;
 public class VatController(IVatCalculationService vatCalculationService, IOptions<ApplicationSettings> applicationSettings) : ControllerBase
 {
     private readonly IVatCalculationService _vatCalculationService = vatCalculationService;
-    private readonly int[] _validVatRates = applicationSettings.Value.ValidVatRates;
+    private readonly int[] _validVatRates = applicationSettings.Value.ValidVatRates
+            ?? throw new InvalidOperationException("Missing configuration value: ValidVatRates.");
 
     [HttpGet("ByGrossAmount")]
     [ProducesResponseType(typeof(VatCalculationAmounts), StatusCodes.Status200OK)]
